@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoTrack</title>
+  <link rel="stylesheet" href="Productivity.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  
+</head>
+<body>
+  <div class="doTrack js-do-track">
+    <div class="navbar">
+      <div>
+        <button class="creator">
+          Creator
+        </button>
+       </div>
+
+      <div>
+        <button class="about">
+          About
+        </button>
+      </div>
+
+      <div class="js-hello hello">
+        
+      </div>
+
+    </div>
+
+    <div class="seek">
+      <h1 class="duration">Select a Duration for your Productivity:</h1>
+
+      <div class="timeSelected">
+        <form class="max-w-sm mx-auto">
+            <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white timer-instruction">Number of hours:</label>
+            <input type="number" id="number-input" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 js-time-selected time-selected text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e.g: 5hrs" required/>
+            <p class="shown-time js-shown-time"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="timer js-timer">
+      <button class="begin-button js-begin-button">Begin</button>
+      <button class="pausebutton">Pause</button>
+      <button class="stopbutton">Stop</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="productivity.js"></script>
+</body>
+</html>
